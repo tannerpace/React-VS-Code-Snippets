@@ -1,0 +1,162 @@
+{
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+
+	"React functional component":{
+		"prefix": "rcfc",
+		"body": [
+			"function ${1:ComponentName}(props) {",
+			"\treturn (",
+			"\t\t<div>",
+			"\t\t\t$0",
+			"\t\t</div>",
+			"\t);",
+			"}"
+		],
+		"description": "Create a functional component"
+	},
+	"React class component":{
+		"prefix": "rccc",
+		"body": [
+			"class ${1:ComponentName} extends React.Component {",
+			"\trender() {",
+			"\t\treturn (",
+			"\t\t\t<div>",
+			"\t\t\t\t$0",
+			"\t\t\t</div>",
+			"\t\t);",
+			"\t}",
+			"}"
+		],
+		"description": "Create a class component"
+	},
+	"React stateless functional component":{
+		"prefix": "rcfc",
+		"body": [
+			"const ${1:ComponentName} = (props) => {",
+			"\treturn (",
+			"\t\t<div>",
+			"\t\t\t$0",
+			"\t\t</div>",
+			"\t);",
+			"}"
+		],
+		"description": "Create a stateless functional component"
+	},
+	"React stateful component":{
+		"prefix": "rcsc",
+		"body": [
+			"class ${1:ComponentName} extends React.Component {",
+			"\tconstructor(props) {",
+			"\t\tsuper(props);",
+			"\t\tthis.state = {",
+			"\t\t\t$2",
+			"\t\t};",
+			"\t}",
+			"\trender() {",
+			"\t\treturn (",
+			"\t\t\t<div>",
+			"\t\t\t\t$0",
+			"\t\t\t</div>",
+			"\t\t);",
+			"\t}",
+			"}"
+		],
+		"description": "Create a stateful component"
+	},
+	"React component with props":{
+		"prefix": "rcwp",
+		"body": [
+			"class ${1:ComponentName} extends React.Component {",
+			"\trender() {",
+			"\t\treturn (",
+			"\t\t\t<div>",
+			"\t\t\t\t$0",
+			"\t\t\t</div>",
+			"\t\t);",
+			"\t}",
+			"}"
+		],
+		"description": "Create a component with props"
+	},
+	"React component with props and state":{
+		"prefix": "rcc",
+		"body": [
+			"class ${1:ComponentName} extends React.Component {",
+			"\tconstructor(props) {",
+			"\t\tsuper(props);",
+			"\t\tthis.state = {",
+			"\t\t\t$2",
+			"\t\t};",
+			"\t}",
+			"\trender() {",
+			"\t\treturn (",
+			"\t\t\t<div>",
+			"\t\t\t\t$0",
+			"\t\t\t</div>",
+			"\t\t);",
+			"\t}",
+			"}"
+		],
+		"description": "Create a component with props and state"
+	},
+	"React component with props and state and lifecycle methods":{
+		"prefix": "rclf",
+		"body": [
+			"class ${1:ComponentName} extends React.Component {",
+			"\tconstructor(props) {",
+			"\t\tsuper(props);",
+			"\t\tthis.state = {",
+			"\t\t\t$2",
+			"\t\t};",
+			"\t}",
+			"\tcomponentDidMount() {",
+			"\t\t$3",
+			"\t}",
+			"\tcomponentDidUpdate() {",
+			"\t\t$4",
+			"\t}",
+			"\tcomponentWillUnmount() {",
+			"\t\t$5",
+			"\t}",
+			"\trender() {",
+			"\t\treturn (",
+			"\t\t\t<div>",
+			"\t\t\t\t$0",
+			"\t\t\t</div>",
+			"\t\t);",
+			"\t}",
+			"}"
+		],
+		"description": "Create a component with props and state and lifecycle methods"
+	},
+    "React Stack Component Row":{
+        "prefix": "rscr",
+        "body": [
+            "class ${1:ComponentName} extends React.Component {",
+            "    render() {",
+            "        return (",
+            "            <Stack tokens={${2:tokens}}>",
+            "                $0",
+            "            </Stack>",
+            "        );",
+            "    }",
+            "}",
+            "export default ${1:ComponentName};"
+           
+        ],
+        "description": "Create a component with props and state and lifecycle methods"
+    }
+}
+
+
+
+
+	
+
